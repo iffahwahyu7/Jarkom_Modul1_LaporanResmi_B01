@@ -38,6 +38,9 @@ Port 21 adalah port untuk FTP. Untuk memunculkannya dengan melakukan taransfer f
 
 14. Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 
+`host 192.168.43.109`
+![alt text](images/14.jpg)
+
 15. Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
 
 `dst host monta.if.its.ac.id`
