@@ -18,7 +18,7 @@ clue: "25 50 44 46"
 #### B. Capture Filter
 
 11. Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
-Port 21 adalah port untuk FTP. Untuk memunculkannya dengan melakukan taransfer file menggunakan FileZilla
+Port 21 adalah port untuk FTP. Untuk memunculkannya dengan melakukan connecting dan taransfer file menggunakan FileZilla
 
 `tcp.port == 21 || udp.port == 21`
 ![alt text](images/11.1.jpg)
