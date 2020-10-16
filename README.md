@@ -3,17 +3,44 @@
 #### A. Display Filter
 
 1. Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
+
+`http contains "testing.mekanis.me" -> follow TCP stream`
+
 2. Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
+
+`file -> export object -> http -> text filter: tim -> save as`
+
 3. Cari username dan password ketika login di "ppid.dpr.go.id"!
+
+`http contains "ppid.dpr.go.id" && http.request.method == POST`
+
 4. Temukan paket dari web-web yang menggunakan basic authentication method!
+
+`http.authbasic`
+
 5. Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!
+
+`http contains "aku.pengen.pw"`
+
 6. Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).
+
+`ftp-data -> ctrl + f answer.zip -> follow TCP stream -> raw -> save as`
+`ftp-data -> ctrl + f zipkey.txt -> follow TCP stream`
+
 7. Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut.
 Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
+
+`ftp-data contains "Yes.pdf" -> follow TCP stream -> raw -> save as`
+
 8. Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
 9. Cari username dan password ketika login FTP pada localhost!
+
+`ftp.request.command == USER -> follow TCP stream`
+
 10. Cari file .pdf di wireshark lalu download dan buka file tersebut!
 clue: "25 50 44 46"
+
+`ctrl + f hex-value 25 50 44 46 -> follow TCP stream -> raw -> save as`
 
 #### B. Capture Filter
 
