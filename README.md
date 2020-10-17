@@ -5,22 +5,27 @@
 1. Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
 
 `http contains "testing.mekanis.me" -> follow TCP stream`
+![alt text](images/1.jpg)
 
 2. Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
 
 `file -> export object -> http -> text filter: tim -> save as`
+![alt text](images/2.jpg)
 
 3. Cari username dan password ketika login di "ppid.dpr.go.id"!
 
 `http contains "ppid.dpr.go.id" && http.request.method == POST`
+![alt text](images/3.jpg)
 
 4. Temukan paket dari web-web yang menggunakan basic authentication method!
 
 `http.authbasic`
+![alt text](images/4.jpg)
 
 5. Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!
 
 `http contains "aku.pengen.pw"`
+![alt text](images/5.1.jpg)
 
 6. Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).
 
