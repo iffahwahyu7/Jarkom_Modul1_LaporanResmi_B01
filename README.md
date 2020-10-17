@@ -41,14 +41,24 @@ Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 ![alt text](images/7.3.jpg)
 
 8. Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
+`Ftp.response.arg == "Microsoft FTP Service"`
+![alt text](images/8.1.jpg)
+
+`ftp.request.command==RETR && ip.dst == 198.246.117.106`
+![alt text](images/8.2.jpg)
+
 9. Cari username dan password ketika login FTP pada localhost!
 
 `ftp.request.command == USER -> follow TCP stream`
+![alt text](images/9.jpg)
 
 10. Cari file .pdf di wireshark lalu download dan buka file tersebut!
 clue: "25 50 44 46"
 
 `ctrl + f hex-value 25 50 44 46 -> follow TCP stream -> raw -> save as`
+![alt text](images/10.1.jpg)
+![alt text](images/10.2.jpg)
+![alt text](images/10.3.jpg)
 
 #### B. Capture Filter
 
