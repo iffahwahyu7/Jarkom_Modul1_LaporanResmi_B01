@@ -30,7 +30,13 @@
 6. Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).
 
 `ftp-data -> ctrl + f answer.zip -> follow TCP stream -> raw -> save as`
+![alt text](images/6.1.jpg)
+![alt text](images/6.2.jpg)
+
 `ftp-data -> ctrl + f zipkey.txt -> follow TCP stream`
+![alt text](images/6.3.jpg)
+![alt text](images/6.4.jpg)
+![alt text](images/6.5.jpg)
 
 7. Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut.
 Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
