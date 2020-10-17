@@ -36,6 +36,9 @@
 Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 
 `ftp-data contains "Yes.pdf" -> follow TCP stream -> raw -> save as`
+![alt text](images/7.1.jpg)
+![alt text](images/7.2.jpg)
+![alt text](images/7.3.jpg)
 
 8. Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
 9. Cari username dan password ketika login FTP pada localhost!
